@@ -46,5 +46,25 @@ public class InMemoryDataBaseTest {
         Assert.assertNull(userT2);
     }
 
+    @Test
+    public void testGetUserByEmail() {
+        System.out.println("testGetUserByEmail");
+        inMemoryDatabase db = new inMemoryDatabase();
+        //User #1
+        User user1 = new User();
+        user1.setId(1);
+        user1.setEmail("social@solovyov.de");
+        db.addUser(user1);
+
+        System.out.println("");
+        User userT1 = db.getUser("social@solovyov.de");
+        Assert.assertNotNull(userT1);
+        Assert.assertEquals(user1.getEmail(), userT1.getEmail());
+
+        System.out.println("");
+        User userT2 = db.getUser("test@solovyov.de");
+        Assert.assertNull(userT2);
+    }
+
 
 }
