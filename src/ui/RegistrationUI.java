@@ -1,11 +1,11 @@
 package ui;
 
-public class LoginUI implements UIMenuInterface {
-    private static final String menuName = "Login";
+public class RegistrationUI implements UIMenuInterface {
+    private static final String menuName = "Registration";
     @Override
     public void showDialog() {
         System.out.println("Menu: " + menuName);
-        System.out.println("Login...");
+        System.out.println("Registration...");
     }
 
     @Override
