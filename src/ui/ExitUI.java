@@ -1,16 +1,8 @@
 package ui;
 
-public class ExitUI implements UIMenuInterface {
-    private static final String menuName = "Exit";
-    @Override
-    public void showDialog() {
-        System.out.println("Menu: " + menuName);
-        System.out.println("Exiting...");
-    }
-
-    @Override
-    public String getMenuName() {
-        return menuName;
+public class ExitUI extends UIMenu {
+    public ExitUI() {
+        this.setMenuName("Exit");
     }
 
     @Override
