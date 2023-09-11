@@ -21,12 +21,6 @@ public abstract class UIMenu implements UIMenuInterface {
         System.out.println("Exiting...");
     }
 
-    public boolean isExi(){
-        return false;
-}
-
-
-
 
 
 
