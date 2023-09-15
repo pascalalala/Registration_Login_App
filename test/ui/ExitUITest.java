@@ -14,7 +14,7 @@ public class ExitUITest {
         System.out.println(exitMenu.getClass().toString());
         Assert.assertTrue(exitMenu instanceof ExitUI);
         Assert.assertNotNull(exitMenu.getMenuName());
-        Assert.assertEquals(exitMenu.getMenuName(), "Exit");
+        Assert.assertEquals( "Exit",exitMenu.getMenuName());
         exitMenu.getMenuName();
     }
 

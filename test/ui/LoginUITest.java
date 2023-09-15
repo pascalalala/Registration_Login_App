@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class LoginUITest {
 
+    //to-do:setMenuName  -->wiederholende tests (redunanz) vermindern mit abstrakter Test- klasse (statt "Login" Variablen benutzen)
+
     @Test
     public void testGetMenuName(){
         System.out.println("testGetMenuName");
@@ -12,7 +14,7 @@ public class LoginUITest {
         System.out.println(loginMenu.getClass().toString());
         Assert.assertTrue(loginMenu instanceof LoginUI);
         Assert.assertNotNull(loginMenu.getMenuName());
-        Assert.assertEquals(loginMenu.getMenuName(), "Login");
+        Assert.assertEquals("Login",loginMenu.getMenuName());
         loginMenu.getMenuName();
     }
 
