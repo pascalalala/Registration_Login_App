@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class ExitUITest {
 
+
+
     @Test
     public void testGetMenuName(){
         System.out.println("testGetMenuName");

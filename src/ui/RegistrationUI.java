@@ -6,8 +6,11 @@ public class RegistrationUI extends UIMenu {
         this.setMenuName("Registration");
     }
 
+    /*
     @Override
     public boolean isExit() {
-        return false;
+       return false;
     }
+    */
+
 }
