@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class ExitUITest {
 
-
+    private static final String MenuName = "Exit";
 
     @Test
     public void testGetMenuName(){
